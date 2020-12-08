@@ -1,6 +1,6 @@
-const testDispatch = () => {
+const testDispatch = (data) => {
   return function(dispatch) {
-    return dispatch({type: 'TEST'});
+    return dispatch({type: 'TEST', payload: data});
   };
 };
 

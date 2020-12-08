@@ -6,7 +6,7 @@ const test_all_reducer = (state = initialState, action) => {
   console.log(action.type)
   console.log(action.payload)
   switch(action.type) {
-    case 'FILTER_LOWEST_PRICE':
+    case 'TEST':
     return {
       ...state,
       test_reducer: action.payload,
