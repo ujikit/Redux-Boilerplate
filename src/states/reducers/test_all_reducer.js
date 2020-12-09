@@ -1,5 +1,5 @@
 const initialState = {
-  test_reducer: false,
+  test_reducer: '',
 }
 
 const test_all_reducer = (state = initialState, action) => {

@@ -15,7 +15,7 @@ function DispatchExampleComponent ({
 
   return (
     <View style={{backgroundColor: 'red', height: 20, marginTop: 20}}>
-      <TouchableOpacity onPress={() => dispatch(testDispatch())}>
+      <TouchableOpacity onPress={() => dispatch(testDispatch('new data'))}>
         <Text>Sdsds</Text>
       </TouchableOpacity>
     </View>
