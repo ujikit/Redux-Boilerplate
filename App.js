@@ -14,6 +14,7 @@ import { PersistGate } from 'redux-persist/integration/react'
 import {store, persistor} from './src/states/store/store';
 // screens
 import DispatchExampleComponent from './src/screens/DispatchExample';
+import CounterSaga from './src/screens/CounterSaga';
 
 const Stack = createStackNavigator();
 
@@ -23,14 +24,21 @@ const App: () => React$Node = () => {
       <PersistGate loading={null} persistor={persistor}>
       <StatusBar barStyle="dark-content" />
         <NavigationContainer>
-          <Stack.Navigator initialRouteName="DispatchExampleComponent">
+          <Stack.Navigator initialRouteName="CounterSaga">
             <Stack.Screen
               name="DispatchExampleComponent"
               component={DispatchExampleComponent}
               options={{
                 headerShown: false
               }}
-              />
+            />
+            <Stack.Screen
+              name="CounterSaga"
+              component={CounterSaga}
+              options={{
+                headerShown: false
+              }}
+            />
           </Stack.Navigator>
         </NavigationContainer>
       </PersistGate>
