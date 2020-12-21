@@ -17,8 +17,7 @@ function CounterSagaScreen ({
       <View style={styles.counterContainer}>
         <TouchableOpacity
           onPress={() => dispatch({
-            type: 'INCREASE_COUNTER',
-            value: 1,
+            type: 'INCREASE_COUNTER'
           })}
         >
           <Text style={styles.buttonText}>+</Text>
